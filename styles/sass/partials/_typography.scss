@@ -15,6 +15,7 @@
     src: url(../fonts/youngserif/YoungSerif-Regular.otf);
 }
 
+
 html {
     font-size: 125%;
 }
@@ -22,7 +23,7 @@ html {
 body {
     font-family: $secondaryFont;
     font-size: $baseFontSize;
-    color: $primaryTextColor;
+    color: $primary;
 }
 
 h1,
@@ -30,7 +31,7 @@ h2,
 h3,
 h4 {
     font-family: $primaryFont;
-    color: $primaryFont;
+    color: $primary;
     margin: 0;
 }
 
@@ -48,19 +49,19 @@ h3 {
 }
 
 h4 {
-    @include fontSize(34);
+    @include fontSize (34);
 }
 
 h5 {
-    @include fontSize(14);
+    @include fontSize(16);
     text-transform: uppercase;
-    letter-spacing: 0.1rem;
+    letter-spacing: .1rem;
 }
 
 p {
     line-height: 1.4;
 
-    &.smallCopy {
+    &.small-copy {
         @include fontSize(14);
         font-weight: bold;
         margin: 0;
@@ -70,5 +71,5 @@ p {
 a {
     text-decoration: none;
     color: inherit;
-    transition: 0.3s;
+    transition: .3s;
 }
